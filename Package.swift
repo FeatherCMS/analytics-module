@@ -10,15 +10,15 @@ let package = Package(
         .library(name: "AnalyticsModule", targets: ["AnalyticsModule"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/feathercms/feather-core", .branch("dev")),
-        .package(url: "https://github.com/feathercms/analytics-objects", .branch("main")),
+        .package(url: "https://github.com/Rando-Coderissian/feather-core", .branch("test-refactored-modules")),
+        .package(url: "https://github.com/Rando-Coderissian/analytics-objects", .branch("test-refactor-modules")),
         .package(url: "https://github.com/malcommac/UAParserSwift", from: "1.2.1"),
         .package(name: "ALanguageParser", url: "https://github.com/matsoftware/accept-language-parser", from: "1.0.0"),
         .package(url: "https://github.com/vapor/sql-kit.git", from: "3.0.0"),
     ],
     targets: [
         .target(name: "AnalyticsModule", dependencies: [
-            .product(name: "Feather", package: "feather-core"),
+            .product(name: "FeatherCore", package: "feather-core"),
             .product(name: "AnalyticsObjects", package: "analytics-objects"),
             .product(name: "UAParserSwift", package: "UAParserSwift"),
             .product(name: "ALanguageParser", package: "ALanguageParser"),
