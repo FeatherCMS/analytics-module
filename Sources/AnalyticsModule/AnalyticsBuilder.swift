@@ -5,7 +5,7 @@
 //  Created by Tibor Bodecs on 2021. 12. 27..
 //
 
-import Feather
+import FeatherCore
 
 @_cdecl("createAnalyticsModule")
 public func createAnalyticsModule() -> UnsafeMutableRawPointer {
